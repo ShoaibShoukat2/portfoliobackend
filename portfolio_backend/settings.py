@@ -118,9 +118,9 @@ CORS_ALLOWED_ORIGINS = config(
 ).split(',')
 
 # Allow all origins for development (set this in .env file)
-CORS_ALLOW_ALL_ORIGINS = config('CORS_ALLOW_ALL_ORIGINS', default=False, cast=bool)
+CORS_ALLOW_ALL_ORIGINS = config('CORS_ALLOW_ALL_ORIGINS', default=True, cast=bool)
 
-CORS_ALLOW_CREDENTIALS = True
+CORS_ALLOW_CREDENTIALS = False
 
 # Additional CORS headers
 CORS_ALLOW_HEADERS = [
